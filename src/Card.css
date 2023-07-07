@@ -12,9 +12,8 @@
 .title {
   font-size: medium;
 }
-.price {
+.price > b {
   font-size: x-large;
-  font-weight: bolder;
   margin-top: -20px;
 }
 .addToCart {
@@ -30,11 +29,9 @@
   font-size: small;
   align-self: flex-start;
   padding: 0;
-  list-style-type: none;
+  position: relative;
 }
-.offerings > li::before {
-  content: "";
-  width: 50px;
-  height: 50px;
-  background: contain no-repeat url("./assets/react.svg");
+li {
+  list-style-image: url("..\src\assets\dot.svg");
+  list-style-position: inside;
 }
