@@ -1,0 +1,40 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 40px;
+  align-items: center;
+  gap: 40px;
+  margin-top: 50px;
+  box-shadow: 3px 3px 6px 0px #ccdbe8 inset,
+    -3px -3px 6px 1px rgba(255, 255, 255, 0.5) inset;
+}
+.title {
+  font-size: medium;
+}
+.price {
+  font-size: x-large;
+  font-weight: bolder;
+  margin-top: -20px;
+}
+.addToCart {
+  background-color: #ff6f00;
+  color: white;
+  padding: 10px 40px;
+  margin-top: 30px;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  border: none;
+}
+.offerings {
+  font-size: small;
+  align-self: flex-start;
+  padding: 0;
+  list-style-type: none;
+}
+.offerings > li::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: contain no-repeat url("./assets/react.svg");
+}
